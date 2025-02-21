@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-size: .9rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-shadow: 0 0 .3rem purple;
+}
+
+body {
+  background-image: linear-gradient(15deg, rgb(188, 188, 188), rgb(220, 220, 220), rgb(255, 255, 255));
+  font-family: sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+h2, h3 {
+  color: rgb(33, 66, 99);
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+li {
+  list-style-position: inside;
+  margin-top: .3rem;
+}
+
+main {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+.column {
+  flex-flow: column wrap;
+}
+.row {
+  flex-flow: row wrap;
+}
+.going-center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.going-left {
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+.gap {
+  gap: .5rem;
+}
+
+.std-banner {
+  /* background-color: rgb(230, 240, 255); */
+  border-radius: .33rem;
+  border: rgb(128, 128, 128) solid 1px;
+  box-shadow: 0 0 1rem rgb(128, 128, 128);
+  margin-top: .5rem;
+  padding: .3rem;
+}
+.std-css {
+  border: #444 solid 1px;
+  border-radius: .5rem;
+  color: black;
+  box-shadow: 0 0 1rem rgb(55, 88, 119);
+  font-weight: bold;
+  padding: .3rem .6rem;
+}
+.std-description-box {
+  text-align: justify;
+  width: 80%;
+}
+.std-highlight {
+  background-image: linear-gradient(15deg, rgb(200, 200, 200), rgb(170, 170, 170));
+  border: #222 solid 1px;
+  border-radius: .5rem;
+  color: rgb(0, 0, 40);
+  font-size: .9rem;
+  font-weight: bold;
+  padding: .25rem .5rem;
+  height: 1.5rem;
+  width: 5rem;
+}
+.std-mt {
+  margin-top: .5rem;
+}
+
+#right-area #contact-value, #right-area #contact-value-alt, #right-area #email-value {
+  font-size: .9rem;
+}
+
+#template-frame {
+  width: 99%;
+  min-height: 100vh;
+  padding: .7rem 0 0 .7rem;
+}
+
+#left-area {
+  margin-left: .5%;
+  width: 25%;
+}
+
+#middle-area {
+  width: 37%;
+}
+
+#middle-area #name-1st, #middle-area #name-2nd {
+  font-size: .9rem;
+}
+
+#middle-area #first-project, #middle-area #second-project {
+  margin-right: 5%;
+}
+
+#right-area {
+  margin-left: .5%;
+  width: 37%;
+}
+
+#right-area #tecnologies-array {
+  text-transform: uppercase;
+}
+
+#right-area #css {
+  background-image: linear-gradient(15deg, rgb(33, 99, 172), rgb(63, 149, 213));
+}
+#right-area #js {
+  background-color: rgb(243, 223, 54);
+}
+#right-area #git-github {
+  background-image: linear-gradient(to right, rgb(236, 78, 29) 50%, #222 51%);
+}
+#right-area #html {
+  background-image: linear-gradient(to right, rgb(247, 74, 29) 50%, rgb(247, 98, 29) 51%);
+}
+
+#right-area #django {
+  background-color: rgb(9, 45, 31);
+}
+#right-area #express {
+  background-image: linear-gradient(to right, rgb(140, 191, 61) 50%, rgb(68, 70, 57) 51%);
+}
+#right-area #flutter {
+  background-image: linear-gradient(to right, rgb(69, 191, 243) 50%, rgb(0, 83, 153) 51%);
+}
+#right-area #python {
+  background-image: linear-gradient(to right, rgb(68, 131, 178) 50%, rgb(250, 228, 113) 51%);
+}
+#right-area #typescript {
+  background-color: rgb(0, 118, 198);
+}

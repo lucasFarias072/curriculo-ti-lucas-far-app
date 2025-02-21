@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <title>Currículo</title>
+</head>
+<body>
+  <div id="window"></div>
+  <div id="cellphone-frame" class="flex column going-center"></div>
+  
+  <main>
+
+    <div id="template-frame" class="flex row going-left">
+      
+      <!-- Left area -->
+      <div id="left-area">
+        <div id="me">
+          <h2 id="me-name">Lucas Farias</h2>
+          <h3 id="me-title"><i>desenvolvedor frontend</i></h3>
+          <p id="pathway" class="std-description-box">
+            Eu venho de uma breve carreira docente em Língua Inglesa,
+            conheci programação e agora estou em transição. Tenho
+            habilidades criativas e sempre atuei como Freelancer. Eu 
+            aprendi muitas coisas, mas não fiz um estudo direcionado. 
+            Para resolver isso, estou cursando o tecnólogo de ADS. 
+            Minhas especialidades incluem: 
+            <b>HTML, CSS, Javascript.</b>
+          </p>
+          
+          <div id="xp-frame" class="flex column going-left">
+            <h3 id="xp">Experiência</h3>
+            <div class="flex row going-left gap">
+              <b id="where">Freelancer,</b>
+              <span id="state">Piauí</span>
+            </div>
+            <b id="job">Desenvolvedor Frontend</b>
+            <p id="duration">Novembro 2019, presente</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle area -->
+      <div id="middle-area">
+        <div id="first-project" class="std-banner">
+          <div id="info" class="flex row going-left gap">
+            <span class="std-highlight">Projeto</span>
+            <b id="name-1st">Rocket Rectangle</b>
+            <a id="url" href="https://game-rocket-rectangle.vercel.app/" target="_blank">ver projeto</a>
+          </div>
+          <ul id="description" class="std-description-box">
+            <li>
+              O site foi desenvolvido para a prática de adjetivos
+              possessivos na língua inglesa. O jogo consiste em deslocar 
+              o jogador através dos blocos para encontrar os termos 
+              corretos, havendo reações diferentes para acertos e erros.
+              Há também níveis diferentes de dificuldade e customização
+              de cores do tema do jogo.
+            </li>
+            <li>Tecnologias: HTML, CSS, Javascript</li>
+          </ul>
+        </div>
+
+        <div id="second-project" class="std-banner">
+          <div id="info" class="flex row going-left gap">
+            <span class="std-highlight">Projeto</span>
+            <b id="name-2nd">Pizzitália</b>
+            <a id="url" href="https://lucasprog.pythonanywhere.com/" target="_blank">ver projeto</a>
+          </div>
+          <ul id="description" class="std-description-box">
+            <li>
+              O site foi desenvolvido como atividade avaliativa 
+              do curso de Análise e Desenvolvimento de Sistemas.
+              Ele simula um sistema que o funcionário acessa, para cadastrar
+              um cliente e seus pedidos. O funcionário consulta o cliente pelo
+              nome e recebe seu id para vincular ele ao pedido. 
+            </li>
+            <li>Tecnologias: HTML, CSS, Javascript, Django</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Right area -->
+      <div id="right-area">
+        <div id="contact-frame" class="flex column going-left">
+          <h3>Links de Contato</h3>
+          <div class="flex row gap std-mt">
+            <span id="linkedin-label" class="std-highlight">Linkedin</span>
+            <a id="linkedin-link" href="https://www.linkedin.com/in/lucas-farias-38809a348/" target="_blank">perfil</a>
+          </div>
+          <div class="flex row gap std-mt">
+            <span id="github-label" class="std-highlight">Github</span>
+            <a id="github-link" href="https://www.github.com/lucasFarias072" target="_blank">/lucasFarias072</a>
+          </div>
+          <div class="flex row gap std-mt">
+            <span id="contact-label" class="std-highlight">Contato</span>
+            <div class="flex column ">
+              <span id="contact-value">(86) 9 9971-9380</span>
+              <span id="contact-value-alt">(86) 9 8803-0253</span>
+            </div>
+          </div>
+          <div class="flex row gap std-mt">
+            <span id="email-label" class="std-highlight">Email</span>
+            <span id="email-value">lucas.programador.farias@gmail.com</span>
+          </div>
+        </div>
+        
+        <!-- Tecnologies -->
+        <div id="tecnologies-frame">
+          <h3>Tecnologias</h3>
+          <div id="technologies-array" class="flex row going-left gap">
+            <span id="css" class="std-css">css3</span>
+            <span id="git-github" class="std-css">git/github</span>
+            <span id="html" class="std-css">html5</span>
+            <span id="js" class="std-css">javascript (es6+)</span>
+          </div>
+          
+          <h3>Conhecidas</h3>
+          <div id="known-technologies-array" class="flex row going-left gap">
+            <span id="django" class="std-css">django</span>
+            <span id="express" class="std-css">express</span>
+            <span id="flutter" class="std-css">flutter</span>
+            <span id="python" class="std-css">python</span>
+            <span id="typescript" class="std-css">typescript</span>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="flex column going-left">
+          <h3>Educação</h3>
+          <div id="university-a">
+            <b>Universidade Federal do Piauí (UFPI)</b>
+            <ul>
+              <li>Licenciatura Letras Inglês</li>
+            </ul>
+          </div>
+          <div id="university-b" class="std-mt">
+            <b>Instituto Federal do Piauí (IFPI)</b>
+            <ul>
+              <li>Análise e Desenvolvimento de Sistemas (andamento)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
