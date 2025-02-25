@@ -56,6 +56,11 @@ main {
   justify-content: flex-start;
   text-align: left;
 }
+.going-right {
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
 .gap {
   gap: .5rem;
 }
@@ -73,6 +78,7 @@ main {
   border-radius: .5rem;
   color: black;
   box-shadow: 0 0 1rem rgb(55, 88, 119);
+  font-size: .7rem;
   font-weight: bold;
   padding: .3rem .6rem;
 }
@@ -131,31 +137,34 @@ main {
   text-transform: uppercase;
 }
 
-#right-area #css {
+.css {
   background-image: linear-gradient(15deg, rgb(33, 99, 172), rgb(63, 149, 213));
+  color: white;
 }
-#right-area #js {
+.js {
   background-color: rgb(243, 223, 54);
 }
-#right-area #git-github {
+.git-github {
   background-image: linear-gradient(to right, rgb(236, 78, 29) 50%, #222 51%);
 }
-#right-area #html {
+.html {
   background-image: linear-gradient(to right, rgb(247, 74, 29) 50%, rgb(247, 98, 29) 51%);
+  color: white;
 }
 
-#right-area #django {
+.django {
   background-color: rgb(9, 45, 31);
+  color: white;
 }
-#right-area #express {
+.express {
   background-image: linear-gradient(to right, rgb(140, 191, 61) 50%, rgb(68, 70, 57) 51%);
 }
-#right-area #flutter {
+.flutter {
   background-image: linear-gradient(to right, rgb(69, 191, 243) 50%, rgb(0, 83, 153) 51%);
 }
-#right-area #python {
+.python {
   background-image: linear-gradient(to right, rgb(68, 131, 178) 50%, rgb(250, 228, 113) 51%);
 }
-#right-area #typescript {
+.typescript {
   background-color: rgb(0, 118, 198);
 }
