@@ -6,11 +6,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/styles.css">
-  <title>Currículo</title>
+  <title>Meu currículo</title>
 </head>
 <body>
-  <div id="window"></div>
-  <div id="cellphone-frame" class="flex column going-center"></div>
+  <div id="theme-frame" class="flex row going-right">
+    <p id="theme">🌜</p>
+  </div>
   
   <main>
 
@@ -19,8 +20,8 @@
       <!-- Left area -->
       <div id="left-area">
         <div id="me">
-          <h2 id="me-name">Lucas Farias</h2>
-          <h3 id="me-title"><i>desenvolvedor frontend</i></h3>
+          <h2 id="me-name" class="std-label">Lucas Farias</h2>
+          <h3 class="std-label" id="me-title"><i>desenvolvedor frontend</i></h3>
           <p id="pathway" class="std-description-box">
             Eu venho de uma breve carreira docente em Língua Inglesa,
             conheci programação e agora estou em transição. Tenho
@@ -32,7 +33,7 @@
           </p>
           
           <div id="xp-frame" class="flex column going-left">
-            <h3 id="xp">Experiência</h3>
+            <h3 class="std-label" id="xp">Experiência</h3>
             <div class="flex row going-left gap">
               <b id="where">Freelancer,</b>
               <span id="state">Piauí</span>
@@ -42,6 +43,7 @@
           </div>
         </div>
       </div>
+      <!-- /Left area -->
 
       <!-- Middle area -->
       <div id="middle-area">
@@ -53,7 +55,7 @@
           </div>
           <ul id="description" class="std-description-box">
             <li>
-              O site foi desenvolvido para a prática de adjetivos
+              Site desenvolvido para a prática de adjetivos
               possessivos na língua inglesa. O jogo consiste em deslocar 
               o jogador através dos blocos para encontrar os termos 
               corretos, havendo reações diferentes para acertos e erros.
@@ -76,7 +78,7 @@
           </div>
           <ul id="description" class="std-description-box">
             <li>
-              O site foi desenvolvido como atividade avaliativa 
+              Site desenvolvido como atividade avaliativa 
               do curso de Análise e Desenvolvimento de Sistemas.
               Ele simula um sistema que o funcionário acessa, para cadastrar
               um cliente e seus pedidos. O funcionário consulta o cliente pelo
@@ -90,12 +92,34 @@
             <span class="js std-css">javascript</span>
           </div>
         </div>
+
+        <div id="third-project" class="std-banner">
+          <div id="info" class="flex row going-left gap">
+            <span class="std-highlight">Projeto</span>
+            <b id="name-2nd">Pescaria Biruta</b>
+            <a id="url" href="https://pescaria-biruta.vercel.app/" target="_blank">ver projeto</a>
+          </div>
+          <ul id="description" class="std-description-box">
+            <li>
+              Site desenvolvido como atividade recreativa para simular 
+              uma forma alternativa de pescaria, inspirado no jogo 'Gaia Fishing',
+              que jogo desde minha adolescência. 
+            </li>
+          </ul>
+          <div class="flex row going-right gap std-mt">
+            <span class="css std-css">css</span>
+            <span class="html std-css">html</span> 
+            <span class="js std-css">javascript</span>
+          </div>
+        </div>
       </div>
-      
+      <!-- /Middle area -->
+
       <!-- Right area -->
       <div id="right-area">
+        <!-- Contact -->
         <div id="contact-frame" class="flex column going-left">
-          <h3>Links de Contato</h3>
+          <h3 class="std-label">Links de Contato</h3>
           <div class="flex row gap std-mt">
             <span id="linkedin-label" class="std-highlight">Linkedin</span>
             <a id="linkedin-link" href="https://www.linkedin.com/in/lucas-farias-dev-front/" target="_blank">perfil</a>
@@ -116,44 +140,59 @@
             <span id="email-value">lucas.programador.farias@gmail.com</span>
           </div>
         </div>
+        <!-- /Contact -->
         
-        <!-- Tecnologies -->
-        <div id="tecnologies-frame">
-          <h3>Tecnologias</h3>
-          <div id="technologies-array" class="flex row going-left gap">
-            <span class="std-css css">css3</span>
-            <span class="std-css git-github">git/github</span>
-            <span class="std-css html">html5</span>
-            <span class="std-css js">javascript (es6+)</span>
+        <!-- Technologies -->
+        <div id="technologies-frame">
+          
+          <div>
+            <h3 class="std-label">Tecnologias</h3>
+            <div id="technologies-array">
+              <ul id="technologies" class="flex row going-left gap">
+                <li><span class="std-css css">css3</span></li>
+                <li><span class="std-css git-github">git/github</span></li>
+                <li><span class="std-css html">html5</span></li>
+                <li><span class="std-css js">javascript (es6+)</span></li>
+              </ul>
+            </div>
           </div>
           
-          <h3>Conhecidas</h3>
-          <div id="known-technologies-array" class="flex row going-left gap">
-            <span class="std-css django">django</span>
-            <span class="std-css express">express</span>
-            <span class="std-css flutter">flutter</span>
-            <span class="std-css python">python</span>
-            <span class="std-css typescript">typescript</span>
+          
+          <h3 class="std-label">Conhecidas</h3>
+          <div id="known-technologies-array">
+            <ul id="known-technologies" class="flex row going-left gap">
+              <li><span class="std-css django">django</span></li>
+              <li><span class="std-css express">express</span></li>
+              <li><span class="std-css flutter">flutter</span></li>
+              <li><span class="std-css python">python</span></li>
+              <li><span class="std-css typescript">typescript</span></li>
+            </ul>
           </div>
         </div>
+        <!-- /Technologies -->
 
         <!-- Education -->
-        <div class="flex column going-left">
-          <h3>Educação</h3>
-          <div id="university-a">
-            <b>Universidade Federal do Piauí (UFPI)</b>
-            <ul>
-              <li>Licenciatura Letras Inglês</li>
-            </ul>
+        <div id="education-frame">
+          
+          <div class="flex column going-left">
+            <h3 class="std-label">Educação</h3>
           </div>
-          <div id="university-b" class="std-mt">
-            <b>Instituto Federal do Piauí (IFPI)</b>
-            <ul>
-              <li>Análise e Desenvolvimento de Sistemas (andamento)</li>
-            </ul>
+
+          <div id="university-a" class="flex column going-left">
+            <p><b>Universidade Federal do Piauí (UFPI)</b></p>
+            <p>Licenciatura Letras Inglês</p>
           </div>
+
+          <div id="university-b" class="std-mt flex column going-left">
+            <p><b>Instituto Federal do Piauí (IFPI)</b></p>
+            <p>Análise e Desenvolvimento de Sistemas (andamento)</p>
+          </div>
+
         </div>
+        <!-- /Education -->
       </div>
+      <!-- /Right area -->
+    
     </div>
     
   </main>
